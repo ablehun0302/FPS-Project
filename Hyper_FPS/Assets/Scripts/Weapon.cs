@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
 
     void Awake()
     {
-        starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+        starterAssetsInputs = GetComponentInParent<StarterAssetsInputs>();
     }
     void Update()
     {
@@ -22,9 +22,7 @@ public class Weapon : MonoBehaviour
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity))
-        {   
-            Debug.Log(hit.collider.name);  
-            /*
+        {
             EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
             enemyHealth?.TakeDamage(damageAmount);
             //if (enemyHealth != null)
@@ -32,7 +30,6 @@ public class Weapon : MonoBehaviour
             //    enemyHealth.TakeDamage(damageAmount);
             //}
             starterAssetsInputs.ShootInput(false);
-            */
         }
     }
 }
