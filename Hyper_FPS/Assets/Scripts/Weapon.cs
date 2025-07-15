@@ -2,6 +2,7 @@ using UnityEngine;
 using StarterAssets;
 public class Weapon : MonoBehaviour
 {
+    [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] int damageAmount = 1;
 
     StarterAssetsInputs starterAssetsInputs;
@@ -18,6 +19,8 @@ public class Weapon : MonoBehaviour
     void HandleShoot()
     {
         if (!starterAssetsInputs.Shoot) return;
+
+        muzzleFlash.Play();
 
         RaycastHit hit;
 
