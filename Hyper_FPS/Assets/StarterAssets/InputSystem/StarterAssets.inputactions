@@ -33,18 +33,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "7a362ea7-f2aa-4444-91ec-06b1f5200d37",
+                    "name": "Sprint",
+                    "type": "PassThrough",
+                    "id": "980e881e-182c-404c-8cbf-3d09fdb48fef",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Sprint",
-                    "type": "PassThrough",
-                    "id": "980e881e-182c-404c-8cbf-3d09fdb48fef",
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "ea73ca3a-66f3-485d-a2c5-7424e75f5c01",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -230,7 +230,7 @@
                 },
                 {
                     "name": "",
-                    "id": "4dc6ed31-85b5-4798-9c31-3a339d0ba301",
+                    "id": "8d11d94e-2140-443f-9294-13148afcc50d",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
@@ -241,7 +241,7 @@
                 },
                 {
                     "name": "",
-                    "id": "4dc6ffd0-d4b5-4f2b-9388-afa430404c78",
+                    "id": "9d9494c0-dd3d-4b67-931b-ceac0b5b9130",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
